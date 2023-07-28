@@ -2,6 +2,7 @@ const Video = require('../models/video');
 
 exports.store = (req, res) => {
     const video = new Video({
+        title: req.body.title,
         urlImageThumbnail: req.body.urlImageThumbnail
     });
 
