@@ -61,7 +61,8 @@ Before running the project, make sure you have the following software installed 
 ### API Minimum
 
 #### 1. Video Thumbnail List
-***Request***
+
+<!-- ***Request*** -->
     - Method = GET
     - Endpoint = /video
     - Parameter = null
