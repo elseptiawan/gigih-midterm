@@ -8,8 +8,8 @@ const {
     destroy
 } = require('../controllers/productController');
 
-router.get('/', index);
-router.get('/:id', show);
+router.get('/:videoId', index);
+// router.get('/:id', show);
 router.post('/:videoId', store);
 router.put('/:id', update);
 router.delete('/:id', destroy);

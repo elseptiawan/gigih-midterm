@@ -2,7 +2,7 @@ const Product = require('../models/product');
 
 exports.index = async (req,res) => {
     try {
-        const products = await Product.find().populate("videoId");
+        const products = await Product.find({'videoId': req.params.videoId}).populate("videoId");
         res.json({message:"Success get Products", data:products});
     } catch (error) {
         res.json({message:error.message});
