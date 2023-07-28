@@ -419,10 +419,16 @@ Before running the project, make sure you have the following software installed 
 ## How-To-Run
 
 1. clone project repository to local
-```git clone https://github.com/elseptiawan/gigih-midterm.git```
+```
+git clone https://github.com/elseptiawan/gigih-midterm.git
+```
 2. Install All dependencies
-```npm install```
+```
+npm install
+```
 3. Create file `.env`. You can copy code on `.env.example` and paste to `.env` for local mongodb server
 4. Make sure mongodb is running on your local server
 5. Run the server
-```npm run start` or `npm run dev```
+```
+npm run start` or `npm run dev
+```
