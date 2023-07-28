@@ -30,7 +30,7 @@ exports.store = (req,res) => {
         product.save();
         res.json({message:"Success Insert Product", data:product});
     } catch (error) {
-        res.json({messge:error.message});
+        res.json({message:error.message});
     }
 }
 
