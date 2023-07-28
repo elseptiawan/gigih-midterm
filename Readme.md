@@ -62,14 +62,14 @@ Before running the project, make sure you have the following software installed 
 
 #### 1. Video Thumbnail List
 
-<!-- ***Request*** -->
+##### Request
     - Method = GET
     - Endpoint = /video
     - Parameter = null
     - URL Path = http://localhost:3000/api/video
     - Body = null
 
-***Response***
+##### Response
     - Status = 200
     - Body 
     ```js
@@ -97,14 +97,14 @@ Before running the project, make sure you have the following software installed 
     ```
 
 #### 2. Product List
-***Request***
+##### Request
     - Method = GET
     - Endpoint = /product
     - Parameter = videoId
     - URL Path = http://localhost:3000/api/product/:videoId
     - Body = null
 
-***Response***
+##### Response
     - Status = 200
     - Body 
     ```js
@@ -133,14 +133,14 @@ Before running the project, make sure you have the following software installed 
     ```
 
 #### 3. Comments List
-***Request***
+##### Request
     - Method = GET
     - Endpoint = /comment
     - Parameter = videoId
     - URL Path = http://localhost:3000/api/comment/:videoId
     - Body = null
 
-***Response***
+##### Response
     - Status = 200
     - Body 
     ```js
@@ -168,7 +168,7 @@ Before running the project, make sure you have the following software installed 
     ```
 
 #### 4. Submit comment
-***Request***
+##### Request
     - Method = POST
     - Endpoint = /comment
     - Parameter = videoId
@@ -181,7 +181,7 @@ Before running the project, make sure you have the following software installed 
     }
     ```
 
-***Response***
+##### Response
     - Status = 200
     - Body 
     ```js
