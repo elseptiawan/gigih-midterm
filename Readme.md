@@ -4,6 +4,7 @@
 * [Database-Structure](#database-structure)
 * [API-Structure](#api-structure)
 * [List-API](#list-api)
+* [How-To-Run](#how-to-run)
 
 
 ## Prerequisites
