@@ -2,17 +2,8 @@ const Comment = require('../models/comment');
 
 exports.index = async (req,res) => {
     try {
-        const comments = await Comment.find().populate("videoId");
+        const comments = await Comment.find({'videoId': req.params.videoId}).populate("videoId");
         res.json({message:"Success get Comments", data:comments});
-    } catch (error) {
-        res.json({message:error.message});
-    }
-}
-
-exports.show = async (req,res) => {
-    try {
-        const comment = await Comment.findById(req.params.id).populate("videoId");
-        res.json({message:"Success Get Comment", data:comment});
     } catch (error) {
         res.json({message:error.message});
     }
