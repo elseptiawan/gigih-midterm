@@ -14,10 +14,14 @@ database.once('connected', () => {
     console.log("Database Connected");
 });
 
+const videoRoute = require('./routes/videos');
+
 app.use(express.json());
 
 const apiRoutes = express.Router();
 app.use('/api', apiRoutes);
+
+apiRoutes.use('/video', videoRoute);
 
 app.listen(3000, () => {
     console.log("Server Run at Port 3000");
