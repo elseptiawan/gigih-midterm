@@ -15,6 +15,7 @@ database.once('connected', () => {
 });
 
 const videoRoute = require('./routes/videos');
+const productRoute = require('./routes/products');
 
 app.use(express.json());
 
@@ -22,6 +23,7 @@ const apiRoutes = express.Router();
 app.use('/api', apiRoutes);
 
 apiRoutes.use('/video', videoRoute);
+apiRoutes.use('/product', productRoute);
 
 app.listen(3000, () => {
     console.log("Server Run at Port 3000");
