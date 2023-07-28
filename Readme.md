@@ -432,3 +432,4 @@ npm install
 ```
 npm run start` or `npm run dev
 ```
+6. Run each List APIs
