@@ -1,5 +1,6 @@
 require('dotenv').config();
 const express = require('express');
+const cors = require('cors');
 const app = express();
 
 const mongoose = require('mongoose');
@@ -18,6 +19,7 @@ const videoRoute = require('./routes/videos');
 const productRoute = require('./routes/products');
 const commentRoute = require('./routes/comments');
 
+app.use(cors());
 app.use(express.json());
 
 const apiRoutes = express.Router();
@@ -27,6 +29,6 @@ apiRoutes.use('/video', videoRoute);
 apiRoutes.use('/product', productRoute);
 apiRoutes.use('/comment', commentRoute);
 
-app.listen(3000, () => {
+app.listen(8000, () => {
     console.log("Server Run at Port 3000");
 });
