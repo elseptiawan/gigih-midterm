@@ -3,7 +3,8 @@ const Video = require('../models/video');
 exports.store = (req, res) => {
     const video = new Video({
         title: req.body.title,
-        urlImageThumbnail: req.body.urlImageThumbnail
+        urlImageThumbnail: req.body.urlImageThumbnail,
+        urlVideo: req.body.urlVideo
     });
 
     try {
@@ -27,7 +28,7 @@ exports.update = async (req,res) => {
 
 exports.index = async (req,res) => {
     try {
-        const videos = await Video.find();
+        const videos = await Video.find({title: {$regex: '.*' + req.query.search + '.*', $options: 'i'}});
         res.json({message:"Success Get Videos", data: videos});
     } catch (error) {
         res.json({message:error.meesage});
