@@ -23,6 +23,7 @@ exports.store = (req,res) => {
         linkProduct: req.body.linkProduct,
         title: req.body.title,
         price: req.body.price,
+        urlImage: req.body.urlImage,
         videoId: req.params.videoId
     });
 
