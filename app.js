@@ -29,6 +29,6 @@ apiRoutes.use('/video', videoRoute);
 apiRoutes.use('/product', productRoute);
 apiRoutes.use('/comment', commentRoute);
 
-app.listen(8000, () => {
-    console.log("Server Run at Port 3000");
+app.listen(8080, () => {
+    console.log("Server Run at Port 8080");
 });
